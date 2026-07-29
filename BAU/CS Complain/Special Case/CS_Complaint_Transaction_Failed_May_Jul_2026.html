@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CS Complaint – Transaction Failed Analysis | May–Jul 2026</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1a2332',accent:'#2563eb',positive:'#15803d',negative:'#b91c1c',muted:'#6b7280',divider:'#e5e7eb'}}}}</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+table th{font-weight:600;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:#6b7280}
+table td{font-size:.8125rem}
+table tbody tr{border-bottom:1px solid #f3f4f6}table tbody tr:last-child{border-bottom:none}
+.metric-label{font-size:.7rem;color:#6b7280;letter-spacing:.03em;text-transform:uppercase}
+.metric-value{font-size:1.75rem;font-weight:700;color:#1a2332;line-height:1.2}
+.kpi-card{background:#fff;border:1px solid #e5e7eb;border-radius:.75rem;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.tbl-scroll{overflow-x:auto;border:1px solid #e5e7eb;border-radius:.75rem}
+.tbl-scroll table{min-width:600px}
+.tbl-scroll thead th{position:sticky;top:0;z-index:10;background:#1a2332;color:#fff;padding:.625rem .5rem;white-space:nowrap;font-size:.65rem}
+.tbl-scroll tbody td{padding:.5rem;white-space:nowrap}
+.tbl-scroll tbody tr:nth-child(even){background:#f9fafb}
+.section-divider{border-top:2px solid #e5e7eb;margin:3rem 0 2rem}
+@media print{body{font-size:9.5px}.max-w-5xl{max-width:100%!important}.tbl-scroll{overflow:visible}.no-print{display:none!important}}
+</style>
+</head>
+<body class="bg-white text-gray-800">
+
+<header class="no-print border-b border-divider bg-white sticky top-0 z-50">
+<div class="max-w-5xl mx-auto px-6">
+<div class="flex items-center justify-between h-14">
+<div>
+<span class="text-sm font-bold text-primary tracking-tight">Virtual Product Operations</span>
+<span class="text-xs text-muted ml-2">CS Complaint – Transaction Failed Analysis</span>
+</div>
+<button onclick="window.print()" class="text-xs text-muted hover:text-primary transition no-print">Export PDF</button>
+</div>
+</div>
+</header>
+
+<div class="max-w-5xl mx-auto px-6 py-10">
+
+<h2 class="text-xl font-bold text-primary mb-6 pb-2 border-b-2 border-accent">CS Complaint – Transaction Failed Analysis</h2>
+<p class="text-xs text-accent font-semibold mb-6">May – July 2026</p>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-8">
+<h3 class="text-sm font-bold text-primary mb-4">Executive Summary</h3>
+
+<p class="text-xs font-semibold text-accent uppercase tracking-wide mb-1">Objective</p>
+<p class="text-sm text-gray-700 mb-4">&bull; Monitor whether the share of "Transaction Failed" complaints is increasing, identify the main business root causes behind user complaints, and determine the highest-impact improvement actions.</p>
+
+<p class="text-xs font-semibold text-accent uppercase tracking-wide mb-1">Data Finding</p>
+<p class="text-sm text-gray-700 mb-4">&bull; Although total CS complaints decreased by 60.8%, Transaction Failed complaint share increased from 4.7% to 21.3%. The majority of complaints (89.9%) are related to <strong>Refund Visibility</strong> and understanding why transactions failed, indicating the primary issue is refund communication rather than actual supplier or system failures (5.3%).</p>
+
+<p class="text-xs font-semibold text-accent uppercase tracking-wide mb-1">Next Plan</p>
+<p class="text-sm text-gray-700 mb-0">&bull; Prioritize improvements on <strong>Refund Visibility</strong> and transaction failure messaging, continue monitoring high-complaint categories (Paket Data, Token Listrik) and suppliers, and track the impact on Transaction Failed complaints over the coming months.</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- SECTION 1: OVERALL CS COMPLAINT -->
+<h3 class="text-lg font-bold text-primary mb-1">Overall CS Complaint</h3>
+<p class="text-xs text-muted mb-4">This section provides an overview of all CS complaints across all issue types.</p>
+
+<div class="grid grid-cols-3 md:grid-cols-5 gap-4 mb-8">
+<div class="kpi-card p-5 text-center"><p class="metric-label mb-2">May Complaint</p><p class="metric-value">2,734</p></div>
+<div class="kpi-card p-5 text-center"><p class="metric-label mb-2">June Complaint</p><p class="metric-value">1,448</p></div>
+<div class="kpi-card p-5 text-center"><p class="metric-label mb-2">July Complaint</p><p class="metric-value">1,072</p></div>
+<div class="kpi-card p-5 text-center border-emerald-200"><p class="metric-label mb-2">May → Jun MoM</p><p class="metric-value text-lg text-positive">▼ 47.0%</p></div>
+<div class="kpi-card p-5 text-center border-emerald-200"><p class="metric-label mb-2">Jun → Jul MoM</p><p class="metric-value text-lg text-positive">▼ 26.0%</p></div>
+</div>
+
+<!-- 2. COMPLAINT BY ISSUE TYPE -->
+<h3 class="text-sm font-bold text-primary mb-3">Complaint by Issue Type</h3>
+<div class="tbl-scroll mb-8">
+<table class="w-full"><thead>
+<tr>
+<th class="text-left" rowspan="2" style="vertical-align:bottom">Issue Type</th>
+<th class="text-center" colspan="3" style="border-bottom:1px solid rgba(255,255,255,.2)">User Complaint Number</th>
+<th class="text-center" colspan="3" style="border-bottom:1px solid rgba(255,255,255,.2)">% Share Complaint</th>
+<th class="text-center" colspan="2" style="border-bottom:1px solid rgba(255,255,255,.2)">MoM %</th>
+</tr>
+<tr>
+<th class="text-right">May</th><th class="text-right">Jun</th><th class="text-right">Jul</th>
+<th class="text-right">May</th><th class="text-right">Jun</th><th class="text-right">Jul</th>
+<th class="text-right">May→Jun</th><th class="text-right">Jun→Jul</th>
+</tr>
+</thead><tbody>
+<tr><td class="font-medium">Not Received Product</td><td class="text-right">1,943</td><td class="text-right">521</td><td class="text-right">353</td><td class="text-right">71.1%</td><td class="text-right">36.0%</td><td class="text-right">32.9%</td><td class="text-right text-positive">-73.2%</td><td class="text-right text-positive">-32.2%</td></tr>
+<tr style="background:#eff6ff;font-weight:600"><td class="font-medium">Transaction Failed</td><td class="text-right">129</td><td class="text-right">307</td><td class="text-right">228</td><td class="text-right">4.7%</td><td class="text-right">21.2%</td><td class="text-right">21.3%</td><td class="text-right text-negative">+138.0%</td><td class="text-right text-positive">-25.7%</td></tr>
+<tr><td class="font-medium">Not Received Within Estimation</td><td class="text-right">288</td><td class="text-right">287</td><td class="text-right">214</td><td class="text-right">10.5%</td><td class="text-right">19.8%</td><td class="text-right">20.0%</td><td class="text-right text-positive">-0.3%</td><td class="text-right text-positive">-25.4%</td></tr>
+<tr><td class="font-medium">Not Received Past Estimation</td><td class="text-right">101</td><td class="text-right">43</td><td class="text-right">29</td><td class="text-right">3.7%</td><td class="text-right">3.0%</td><td class="text-right">2.7%</td><td class="text-right text-positive">-57.4%</td><td class="text-right text-positive">-32.6%</td></tr>
+</tbody></table>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- SECTION 2: TRANSACTION FAILED ANALYSIS -->
+<h3 class="text-lg font-bold text-primary mb-1">Transaction Failed Analysis</h3>
+<p class="text-xs text-muted mb-6">This section provides a detailed analysis of complaints classified as Transaction Failed.</p>
+
+<h4 class="text-sm font-bold text-primary mb-3">Transaction Failed Breakdown by Category</h4>
+<div class="tbl-scroll mb-8">
+<table class="w-full"><thead>
+<tr>
+<th class="text-left" rowspan="2" style="vertical-align:bottom">Category</th>
+<th class="text-center" colspan="3" style="border-bottom:1px solid rgba(255,255,255,.2)">User Complaint Number</th>
+<th class="text-center" colspan="3" style="border-bottom:1px solid rgba(255,255,255,.2)">% Share Transaction Failed</th>
+<th class="text-center" colspan="2" style="border-bottom:1px solid rgba(255,255,255,.2)">MoM %</th>
+<th class="text-left" rowspan="2" style="vertical-align:bottom">Main Supplier</th>
+</tr>
+<tr>
+<th class="text-right">May</th><th class="text-right">Jun</th><th class="text-right">Jul</th>
+<th class="text-right">May</th><th class="text-right">Jun</th><th class="text-right">Jul</th>
+<th class="text-right">May→Jun</th><th class="text-right">Jun→Jul</th>
+</tr>
+</thead><tbody>
+<tr><td class="font-medium">Paket Data</td><td class="text-right">76</td><td class="text-right">163</td><td class="text-right">101</td><td class="text-right">58.9%</td><td class="text-right">53.1%</td><td class="text-right">44.3%</td><td class="text-right text-negative">+114.5%</td><td class="text-right text-positive">-38.0%</td><td>Sepulsa</td></tr>
+<tr><td class="font-medium">Token Listrik</td><td class="text-right">17</td><td class="text-right">93</td><td class="text-right">74</td><td class="text-right">13.2%</td><td class="text-right">30.3%</td><td class="text-right">32.5%</td><td class="text-right text-negative">+447.1%</td><td class="text-right text-positive">-20.4%</td><td>Sakalaguna</td></tr>
+<tr><td class="font-medium">Pulsa</td><td class="text-right">22</td><td class="text-right">35</td><td class="text-right">41</td><td class="text-right">17.1%</td><td class="text-right">11.4%</td><td class="text-right">18.0%</td><td class="text-right text-negative">+59.1%</td><td class="text-right text-negative">+17.1%</td><td>Sakalaguna</td></tr>
+<tr><td class="font-medium">e-Wallet</td><td class="text-right">11</td><td class="text-right">13</td><td class="text-right">9</td><td class="text-right">8.5%</td><td class="text-right">4.2%</td><td class="text-right">3.9%</td><td class="text-right text-negative">+18.2%</td><td class="text-right text-positive">-30.8%</td><td>Unknown</td></tr>
+<tr><td class="font-medium">Paket Hemat Telkomsel</td><td class="text-right">1</td><td class="text-right">0</td><td class="text-right">2</td><td class="text-right">0.8%</td><td class="text-right">0.0%</td><td class="text-right">0.9%</td><td class="text-right text-positive">-100.0%</td><td class="text-right">N/A</td><td>Pmb</td></tr>
+<tr><td class="font-medium">e-Money</td><td class="text-right">2</td><td class="text-right">3</td><td class="text-right">1</td><td class="text-right">1.6%</td><td class="text-right">1.0%</td><td class="text-right">0.4%</td><td class="text-right text-negative">+50.0%</td><td class="text-right text-positive">-66.7%</td><td>Sakalaguna</td></tr>
+</tbody></table>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- 4. BUSINESS ROOT CAUSE -->
+<h4 class="text-sm font-bold text-primary mb-3">Business Root Cause of Transaction Failed</h4>
+<div class="tbl-scroll mb-8">
+<table class="w-full" style="min-width:900px"><thead>
+<tr>
+<th class="text-left" rowspan="2" style="vertical-align:bottom">Business Root Cause</th>
+<th class="text-left" rowspan="2" style="vertical-align:bottom">Description</th>
+<th class="text-center" colspan="4" style="border-bottom:1px solid rgba(255,255,255,.2)">User Complaint Number</th>
+<th class="text-center" colspan="4" style="border-bottom:1px solid rgba(255,255,255,.2)">% Share Transaction Failed</th>
+</tr>
+<tr>
+<th class="text-right">May</th><th class="text-right">Jun</th><th class="text-right">Jul</th><th class="text-right">Total</th>
+<th class="text-right">May</th><th class="text-right">Jun</th><th class="text-right">Jul</th><th class="text-right">Total</th>
+</tr>
+</thead><tbody>
+<tr><td class="font-medium" style="white-space:normal;max-width:180px">Refund Visibility</td><td class="text-xs" style="white-space:normal;max-width:220px">Refund was processed but user cannot find or access the refunded balance.</td><td class="text-right">54</td><td class="text-right">172</td><td class="text-right">137</td><td class="text-right font-semibold">363</td><td class="text-right">41.9%</td><td class="text-right">56.0%</td><td class="text-right">60.1%</td><td class="text-right">54.7%</td></tr>
+<tr><td class="font-medium" style="white-space:normal;max-width:180px">Asking Reason Why Transaction Failed</td><td class="text-xs" style="white-space:normal;max-width:220px">User asks why the order was cancelled or failed after payment.</td><td class="text-right">58</td><td class="text-right">94</td><td class="text-right">68</td><td class="text-right font-semibold">220</td><td class="text-right">45.0%</td><td class="text-right">30.6%</td><td class="text-right">29.8%</td><td class="text-right">33.1%</td></tr>
+<tr><td class="font-medium" style="white-space:normal;max-width:180px">Supplier / System Issues</td><td class="text-xs" style="white-space:normal;max-width:220px">Supplier cancellation, operator rejection, product unavailable, timeout, or system error.</td><td class="text-right">6</td><td class="text-right">19</td><td class="text-right">12</td><td class="text-right font-semibold">37</td><td class="text-right">4.7%</td><td class="text-right">6.2%</td><td class="text-right">5.3%</td><td class="text-right">5.6%</td></tr>
+<tr><td class="font-medium" style="white-space:normal;max-width:180px">Other</td><td class="text-xs" style="white-space:normal;max-width:220px">Cannot be reliably classified from the complaint description.</td><td class="text-right">6</td><td class="text-right">14</td><td class="text-right">4</td><td class="text-right font-semibold">24</td><td class="text-right">4.7%</td><td class="text-right">4.6%</td><td class="text-right">1.8%</td><td class="text-right">3.6%</td></tr>
+<tr><td class="font-medium" style="white-space:normal;max-width:180px">Insufficient User Input Validation</td><td class="text-xs" style="white-space:normal;max-width:220px">Transaction failed due to incorrect phone number, customer ID, or input.</td><td class="text-right">5</td><td class="text-right">6</td><td class="text-right">6</td><td class="text-right font-semibold">17</td><td class="text-right">3.9%</td><td class="text-right">2.0%</td><td class="text-right">2.6%</td><td class="text-right">2.6%</td></tr>
+<tr><td class="font-medium" style="white-space:normal;max-width:180px">Refund Policy</td><td class="text-xs" style="white-space:normal;max-width:220px">User misunderstands refund destination, amount, timing, or non-refundable fees.</td><td class="text-right">0</td><td class="text-right">2</td><td class="text-right">1</td><td class="text-right font-semibold">3</td><td class="text-right">0.0%</td><td class="text-right">0.7%</td><td class="text-right">0.4%</td><td class="text-right">0.5%</td></tr>
+</tbody></table>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- 5. KEY FINDINGS -->
+<h4 class="text-sm font-bold text-primary mb-3">Key Findings</h4>
+<div class="bg-white border border-gray-200 rounded-lg p-5 mb-8">
+<ul class="list-none p-0 m-0"><li class="text-sm text-gray-700 py-1">&bull; <strong>Paket Data</strong> was the largest Transaction Failed category in July with 101 complaints (44.3% of TF).</li><li class="text-sm text-gray-700 py-1">&bull; The dominant business root cause in July was <strong>Refund Visibility</strong>, representing 60.1% of Transaction Failed complaints.</li><li class="text-sm text-gray-700 py-1">&bull; <strong>Refund Visibility</strong> had the biggest increase from May to July (+83 complaints).</li><li class="text-sm text-gray-700 py-1">&bull; Only <strong>5.6%</strong> of Transaction Failed complaints were caused by actual supplier or system failures. The majority (55.2%) were related to refund understanding and communication.</li><li class="text-sm text-gray-700 py-1">&bull; Transaction Failed increased by 99 complaints from May to July, while overall complaints declined 60.8%.</li></ul>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- APPENDIX -->
+<details class="mb-8">
+<summary class="cursor-pointer text-sm font-semibold text-accent hover:text-primary transition select-none py-3">&#9654; Show Weekly Transaction Failed Complaint Details</summary>
+
+<div class="mt-4">
+<h3 class="text-sm font-bold text-primary mb-3">Appendix – Weekly Transaction Failed Complaint Details</h3>
+
+<!-- Weekly Table -->
+<div class="tbl-scroll mb-6">
+<table class="w-full" style="min-width:900px"><thead><tr>
+<th class="text-left">Week</th>
+<th class="text-right">TF Complaints</th>
+<th class="text-right">WoW %</th>
+<th class="text-right">Total CS Complaints</th>
+<th class="text-right">TF Share (%)</th>
+<th class="text-left">Main Category</th>
+<th class="text-left">Main Business Root Cause</th>
+</tr></thead><tbody>
+<tr><td>W18 (27 Apr - 03 May)</td><td class="text-right">7</td><td class="text-right">-</td><td class="text-right">97</td><td class="text-right">7.2%</td><td>Paket Data</td><td>Asking Reason</td></tr>
+<tr><td>W19 (04 May - 10 May)</td><td class="text-right">30</td><td class="text-right text-negative">+328.6%</td><td class="text-right">240</td><td class="text-right">12.5%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W20 (11 May - 17 May)</td><td class="text-right">25</td><td class="text-right text-positive">-16.7%</td><td class="text-right">1,873</td><td class="text-right">1.3%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W21 (18 May - 24 May)</td><td class="text-right">19</td><td class="text-right text-positive">-24.0%</td><td class="text-right">272</td><td class="text-right">7.0%</td><td>Paket Data</td><td>Asking Reason</td></tr>
+<tr><td>W22 (25 May - 31 May)</td><td class="text-right">48</td><td class="text-right text-negative">+152.6%</td><td class="text-right">252</td><td class="text-right">19.0%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W23 (01 Jun - 07 Jun)</td><td class="text-right">54</td><td class="text-right text-negative">+12.5%</td><td class="text-right">292</td><td class="text-right">18.5%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr style="background:#fef2f2"><td class="font-semibold">W24 (08 Jun - 14 Jun)</td><td class="text-right font-semibold">97</td><td class="text-right text-negative font-semibold">+79.6%</td><td class="text-right">303</td><td class="text-right font-semibold">32.0%</td><td>Token Listrik</td><td>Refund Visibility</td></tr>
+<tr><td>W25 (15 Jun - 21 Jun)</td><td class="text-right">73</td><td class="text-right text-positive">-24.7%</td><td class="text-right">398</td><td class="text-right">18.3%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W26 (22 Jun - 28 Jun)</td><td class="text-right">58</td><td class="text-right text-positive">-20.5%</td><td class="text-right">355</td><td class="text-right">16.3%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W27 (29 Jun - 05 Jul)</td><td class="text-right">70</td><td class="text-right text-negative">+20.7%</td><td class="text-right">309</td><td class="text-right">22.7%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W28 (06 Jul - 12 Jul)</td><td class="text-right">65</td><td class="text-right text-positive">-7.1%</td><td class="text-right">282</td><td class="text-right">23.0%</td><td>Token Listrik</td><td>Refund Visibility</td></tr>
+<tr><td>W29 (13 Jul - 19 Jul)</td><td class="text-right">65</td><td class="text-right">0.0%</td><td class="text-right">257</td><td class="text-right">25.3%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W30 (20 Jul - 26 Jul)</td><td class="text-right">40</td><td class="text-right text-positive">-38.5%</td><td class="text-right">244</td><td class="text-right">16.4%</td><td>Paket Data</td><td>Refund Visibility</td></tr>
+<tr><td>W31 (27 Jul - 02 Aug)</td><td class="text-right">13</td><td class="text-right text-positive">-67.5%</td><td class="text-right">80</td><td class="text-right">16.2%</td><td>Token Listrik</td><td>Refund Visibility</td></tr>
+</tbody></table>
+</div>
+
+<!-- Weekly Trend Chart -->
+<div class="bg-white border border-gray-200 rounded-lg p-5 mb-6">
+<canvas id="weeklyTfChart" height="100"></canvas>
+</div>
+
+<!-- Weekly Insights -->
+<h4 class="text-xs font-bold text-primary mb-2 uppercase tracking-wide">Weekly Insights</h4>
+<div class="bg-white border border-gray-200 rounded-lg p-5">
+<ul class="list-none p-0 m-0">
+<li class="text-sm text-gray-700 py-1">&bull; Highest weekly Transaction Failed complaints occurred in <strong>W24 (08 Jun - 14 Jun)</strong> with 97 complaints, driven by Token Listrik category.</li>
+<li class="text-sm text-gray-700 py-1">&bull; Transaction Failed share peaked at <strong>32.0%</strong> in W24, more than double the average weekly share.</li>
+<li class="text-sm text-gray-700 py-1">&bull; <strong>Refund Visibility</strong> remained the dominant business root cause in 12 out of 14 weeks, confirming it as a persistent structural issue rather than a one-time spike.</li>
+</ul>
+</div>
+
+</div>
+</details>
+
+</div>
+
+<footer class="border-t border-divider py-6 mt-4"><div class="max-w-5xl mx-auto px-6 text-center">
+<p class="text-xs text-muted">Virtual Product Operations — CS Complaint Transaction Failed Analysis — Confidential</p>
+</div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+document.querySelector('details').addEventListener('toggle', function() {
+  if (this.open && !this.dataset.chartInit) {
+    this.dataset.chartInit = '1';
+    const ctx = document.getElementById('weeklyTfChart').getContext('2d');
+    const weeks = ['W18','W19','W20','W21','W22','W23','W24','W25','W26','W27','W28','W29','W30','W31'];
+    const tfCounts = [7,30,25,19,48,54,97,73,58,70,65,65,40,13];
+    const tfShares = [7.2,12.5,1.3,7.0,19.0,18.5,32.0,18.3,16.3,22.7,23.0,25.3,16.4,16.2];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: weeks,
+        datasets: [
+          {
+            label: 'TF Complaints',
+            data: tfCounts,
+            backgroundColor: 'rgba(37,99,235,0.7)',
+            borderColor: 'rgba(37,99,235,1)',
+            borderWidth: 1,
+            yAxisID: 'y',
+            order: 2
+          },
+          {
+            label: 'TF Share (%)',
+            data: tfShares,
+            type: 'line',
+            borderColor: '#b91c1c',
+            backgroundColor: 'rgba(185,28,28,0.1)',
+            borderWidth: 2,
+            pointRadius: 4,
+            pointBackgroundColor: '#b91c1c',
+            fill: false,
+            yAxisID: 'y1',
+            order: 1
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { position: 'top', labels: { font: { size: 11, family: 'Inter' } } },
+          title: { display: true, text: 'Weekly Transaction Failed Complaints & Share', font: { size: 13, family: 'Inter', weight: '600' }, color: '#1a2332' }
+        },
+        scales: {
+          y: { type: 'linear', position: 'left', title: { display: true, text: 'TF Complaint Count', font: { size: 11 } }, beginAtZero: true },
+          y1: { type: 'linear', position: 'right', title: { display: true, text: 'TF Share (%)', font: { size: 11 } }, beginAtZero: true, grid: { drawOnChartArea: false }, ticks: { callback: function(v) { return v + '%'; } } }
+        }
+      }
+    });
+  }
+});
+</script>
+
+</body></html>
